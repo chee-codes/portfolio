@@ -1,0 +1,94 @@
+.intro {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-primary);
+  transition: 1s ease;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .profile-pic {
+      height: 275px;
+      width: 275px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      // .overlay {
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   background: rgba(0, 0, 0, 0.2);
+      //   height: 100%;
+      //   width: 100%;
+      // }
+
+      @include down(sm) {
+        /* test sizes for sm breakpoint */
+        height: 200px;
+        width: 200px;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .username {
+        font-size: 40px;
+        font-weight: 400;
+        color: var(--txt-primary);
+
+        @include down(sm) {
+          font-size: 36px; /* test font size for sm breakpoint */
+        }
+      }
+
+      .title {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1.1px;
+        color: var(--txt-secondary);
+
+        @include down(sm) {
+          font-size: 20px; /* test font size for sm breakpoint */
+        }
+      }
+
+      .socials {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        span {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 26px;
+          padding: 10px;
+
+          i {
+            color: rgb(83, 115, 147);
+          }
+        }
+      }
+    }
+  }
+}

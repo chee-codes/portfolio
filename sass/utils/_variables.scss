@@ -1,0 +1,40 @@
+:root {
+  // Fonts
+  --font-main: "Montserrat", sans-serif;
+
+  // Colors
+
+  // main
+  --bg-primary: #{$bg-main};
+  --bg-secondary: #{$bg-secondary};
+  --txt-primary: #{$text-main};
+  --txt-secondary: #{$text-secondary};
+  --navbar-bg: #{$navbar};
+
+  // cards
+  --card-bg: #{$card-bg};
+  --card-txt-primary: #{$card-text-main};
+  --card-txt-secondary: #{$card-text-secondary};
+  --card-accent-txt: #{$card-accent};
+
+  // accent -utils
+  --bx-shadow: #{$box-shadow};
+}
+
+// Dark mode
+.dark {
+  --bg-primary: #{$bg-dark-main};
+  --bg-secondary: #{$bg-dark-secondary};
+  --txt-primary: #{$text-dark-main};
+  --txt-secondary: #{$text-dark-secondary};
+  --navbar-bg: #{$navbar-dark};
+
+  // cards
+  --card-bg: #{$card-bg-dark};
+  --card-txt-primary: #{$card-text-main-dark};
+  --card-txt-secondary: #{$card-text-secondary-dark};
+  --card-accent-txt: #{$card-accent-dark};
+
+  // accent - utils
+  --bx-shadow: none;
+}

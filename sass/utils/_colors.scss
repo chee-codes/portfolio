@@ -1,0 +1,34 @@
+//* Default / Light Theme
+
+// Main
+$bg-main: #f6f6f6;
+$bg-secondary: #fafafa;
+$text-main: #3c3c3c;
+$text-secondary: #959595;
+$navbar: rgba(246, 246, 246, 0.985);
+
+//Projects and Skills Cards default
+$card-bg: #fafafa;
+$card-text-main: #3c3c3c;
+$card-text-secondary: #616161;
+$card-accent: #616161;
+
+// accent
+$box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+
+//* Dark Theme
+
+// Main dark
+$bg-dark-main: #111214;
+$bg-dark-secondary: $bg-dark-main;
+$text-dark-main: #f6f6f6;
+$text-dark-secondary: #b1b1b1;
+$navbar-dark: #171717;
+
+// Projects and Skills cards dark
+$card-bg-dark: #1d1d1d9a;
+$card-text-main-dark: #f6f6f6;
+$card-text-secondary-dark: #eee;
+$card-accent-dark: #919191;
+
+// accent dark

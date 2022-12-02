@@ -1,0 +1,122 @@
+.projects {
+  background-color: var(--bg-primary);
+  color: var(--txt-primary);
+  min-height: 100vh;
+  transition: 1s ease;
+  padding-bottom: 40px;
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    h2 {
+      text-align: center;
+      padding: 10px;
+      font-size: 38px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      @include down(md) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+      @include down(sm) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .card {
+        flex: 1;
+        grid-column: span 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        -webkit-box-shadow: var(--bx-shadow);
+        box-shadow: var(--bx-shadow);
+        background-color: var(--card-bg);
+        transition: 1000ms ease;
+
+        .card-image {
+          width: 100%;
+          height: 200px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .card-body {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 10px;
+          padding: 10px;
+
+          .card-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .title {
+              font-size: 20px;
+              font-weight: 500;
+              color: var(--card-txt-primary);
+            }
+
+            .desc {
+              line-height: 1.5;
+              font-weight: 300;
+              padding: 5px 0;
+              color: var(--card-txt-secondary);
+            }
+          }
+
+          .card-links {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+
+            @include down(md) {
+              flex-direction: column;
+            }
+
+            a {
+              flex: 1;
+              background-color: rgb(83, 115, 147);
+              color: white;
+              padding: 10px;
+              border: none;
+              border-radius: 3px;
+              text-align: center;
+
+              // @include down(md) {
+              //   text-align: center;
+              // }
+            }
+          }
+        }
+      }
+    }
+  }
+}

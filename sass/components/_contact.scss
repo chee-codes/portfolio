@@ -1,0 +1,91 @@
+.contact {
+  min-height: 100vh;
+  background-color: var(--bg-secondary);
+  color: var(--txt-primary);
+  transition: 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include down(lg) {
+    padding-inline: 25px;
+  }
+
+  form {
+    width: min(100%, 500px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 60px;
+    border-radius: 10px;
+
+    @include down(md) {
+      padding: 30px 0;
+    }
+
+    h2 {
+      font-size: 38px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      outline: none;
+      border: 1px solid rgb(108, 108, 108);
+      border-radius: 3px;
+      color: var(--txt-primary);
+      background-color: transparent;
+
+      &::placeholder {
+        color: var(--txt-secondary);
+        letter-spacing: 1.5px;
+        font-weight: 500;
+      }
+    }
+
+    textarea {
+      border: none;
+      outline: none;
+      border: 1px solid rgb(108, 108, 108);
+      background-color: transparent;
+      resize: none;
+      padding: 10px;
+      font-family: var(--font-main);
+      color: var(--txt-primary);
+      line-height: 1.5;
+      border-radius: 3px;
+
+      &::placeholder {
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        color: var(--txt-secondary);
+      }
+    }
+
+    @include down(md) {
+      input,
+      input::placeholder,
+      textarea,
+      textarea::placeholder {
+        font-size: 16px;
+      }
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 3px;
+      background-color: rgb(83, 115, 147);
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
