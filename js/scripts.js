@@ -76,16 +76,12 @@ themeBtn.addEventListener("click", toggleMode);
 // Dynamically load cards and data into html
 function loadData() {
   for (let i = 0; i < projects.length; i++) {
-    document.querySelector(".cards").innerHTML += `
+    document.querySelector(".card-container").innerHTML += `
         <div class="card">
-          <div class="card-image">
-            <img src=${projects[i].img} alt="project image">
-          </div>
+          <img src=${projects[i].img} alt="project image">
           <div class="card-body">
-            <div class="card-content">
               <h4 class="title">${projects[i].title}</h4>
               <p class="desc">${projects[i].desc}</p>
-            </div>
             <div class="card-links">
               <a href=${projects[i].links.repo} target="_blank" >Repository</a>
               <a href=${projects[i].links.deployed} target="_blank" >Live Link</a>

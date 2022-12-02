@@ -21,9 +21,9 @@
       margin-bottom: 30px;
     }
 
-    .cards {
-      height: 100%;
-      width: 100%;
+    .card-container {
+      // height: 100%;
+      // width: 100%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
@@ -38,7 +38,6 @@
 
       .card {
         flex: 1;
-        grid-column: span 1;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -49,15 +48,10 @@
         background-color: var(--card-bg);
         transition: 1000ms ease;
 
-        .card-image {
+        img {
           width: 100%;
           height: 200px;
-
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+          object-fit: cover;
         }
 
         .card-body {
@@ -65,28 +59,20 @@
           height: 100%;
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
           gap: 10px;
-          padding: 10px;
+          padding: 20px;
 
-          .card-content {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+          .title {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--card-txt-primary);
+          }
 
-            .title {
-              font-size: 20px;
-              font-weight: 500;
-              color: var(--card-txt-primary);
-            }
-
-            .desc {
-              line-height: 1.5;
-              font-weight: 300;
-              padding: 5px 0;
-              color: var(--card-txt-secondary);
-            }
+          .desc {
+            line-height: 1.5;
+            font-weight: 300;
+            padding: 5px 0;
+            color: var(--card-txt-secondary);
           }
 
           .card-links {
@@ -96,6 +82,7 @@
             justify-content: center;
             gap: 20px;
             padding: 10px 0;
+            margin-top: auto;
 
             @include down(md) {
               flex-direction: column;
@@ -108,11 +95,13 @@
               padding: 10px;
               border: none;
               border-radius: 3px;
-              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
 
-              // @include down(md) {
-              //   text-align: center;
-              // }
+              @include down(md) {
+                width: 100%;
+              }
             }
           }
         }
