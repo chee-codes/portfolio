@@ -45,13 +45,4 @@ const projects = [
       deployed: "https://chee-codes.github.io/employee-directory/",
     },
   },
-  {
-    title: "Stock Ticker",
-    img: "https://via.placeholder.com/300.png/?text=No+Image+To+Display",
-    desc: "A stock ticker web application that allows users to search for specific stocks, save them, as well as leave comments for themselves to access later. Authentication was run through Google's Firebase and Mongoose was used for our database. The web application is dynamically generated through React components with the graphs being created using the Dygraphs NPM package. On the user dashboard we render news from the New York Times Business section to aide users in potentially seeing stock market shifting news.",
-    links: {
-      repo: "https://github.com/michaelanthonyyy/stockticker",
-      deployed: "https://infinite-meadow-98613.herokuapp.com/",
-    },
-  },
 ];
