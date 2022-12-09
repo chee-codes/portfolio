@@ -24,7 +24,7 @@ const projects = [
     links: {
       repo: "https://github.com/chee-codes/fitness-tracker",
       deployed:
-        "https://nameless-harbor-99466.herokuapp.com/?id=6033d2d61e20460015df9e74",
+        "https://fitness-tracker-production.up.railway.app/?id=6393b6050b9ded0014e00a73",
     },
   },
   {
